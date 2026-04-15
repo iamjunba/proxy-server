@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>내 프록시</title>
+</head>
+<body>
+
+<h2>프록시 접속기</h2>
+
+<input id="url" placeholder="https://example.com">
+<button onclick="go()">접속</button>
+
+<script>
+function go() {
+  const url = document.getElementById("url").value;
+  location.href = "https://proxy-server-production-be63.up.railway.app/proxy?url=" + url;
+}
+</script>
+
+</body>
+</html>
